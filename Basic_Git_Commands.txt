@@ -1,0 +1,56 @@
+1) pwd -посмотреть где я.
+Q
+2) mkdir название папки - создать папку.
+
+3) cd название папки - зайти в папку.
+
+4) mkdir folder_1 folder_2 folder_3 - создать 3 папки.
+ 
+5) cd folder_1 - зайти в любоую папку.
+ 
+6) создать 5 файлов (3 txt, 2 json)
+-touch one.txt two.txt three.txt
+-touch  the_first.json the_second.json
+
+7) mkdir a b c - создать 3 папки.
+
+8. ls -la - вывести список содержимого папки.
+
+9) + vim one.txt - открыть любой txt файл.
+ 
+10) + [insert] внести изменения в текст - написать туда что-нибудь, любой текст.
+ 
+11) + [esc] :wq - сохранить и выйти.
+ 
+12) cd .. - выйти из папки на уровень выше. 
+
+13)mv the_first.json the_second.json /h/17_group/folder_3 - переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+14)cp the_first.json the_second.json /h/17_group/folder_1 - скопировать любые 2 файла, которые вы создали, в любую другую папку.
+
+15)find h/17_group/folder_1 -name one.txt - найти файл по имени.
+
+16)head -n3(кол-во строк) text_1.txt - вывести несколько первых строк из текстового файла.
+
+17)tail -n3(кол-во строк) text.txt - вывести несколько последних строк из текстового файла. 
+
+18)less text.txt - просмотреть содержимое длинного файла.
+
+19)date - вывести дату и время
+
+20) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions
+
+curl  https://api.quarantine.country/api/v1/regions
+
+21)Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash
+
+cd /h/17_group
+mkdir 1 2 3
+cd folder_2
+touch  11.txt 22.txt 33.txt 111.json 222.json
+mkdir one two three
+ls -la
+mv 11.txt 22.txt one
